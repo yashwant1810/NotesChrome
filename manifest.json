@@ -1,0 +1,23 @@
+{
+    "manifest_version" : 3,
+    "name" : "NoteMaker",
+    "description" : "take notes from your wbesites and store them",
+    "version" : "1.0",
+    "action" : {
+        "default_popup" : "mynotes.html",
+        "default_icon" : "images/note.png"
+    },
+    "icons": {
+    "16": "images/note.png",
+    "32": "images/note.png",
+    "48": "images/note.png",
+    "128": "images/note.png"
+    },
+    "permissions": [
+        "contextMenus",
+        "storage"
+    ],
+    "background":{
+        "service_worker" : "scripts/background.js"
+    }
+}
